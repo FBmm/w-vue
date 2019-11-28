@@ -4,9 +4,8 @@
       <el-col :span="24">
         <el-button type="primary" size="medium">创建</el-button>
         <el-button size="medium" plain>删除</el-button>
-        <WuButton size="medium" plain>删除</WuButton>
       </el-col>
-    </el-row> 
+    </el-row>
     <el-row class="table-wrap">
       <el-col :span="24">
         <el-table :data="tableData" border>
@@ -27,7 +26,6 @@
 </template>
 
 <script>
-
 export default {
   data() {
     return {
