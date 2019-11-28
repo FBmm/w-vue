@@ -120,6 +120,7 @@ export default {
   }
   .content {
     background-color: #fff;
+    min-width: $containerMinWidth - $leftTreeWidth;
   }
   .left-tree,
   .content {
