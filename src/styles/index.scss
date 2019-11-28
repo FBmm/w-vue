@@ -1,20 +1,28 @@
-body, html {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    font-family: 'Avenir', Helvetica, Arial, sans-serif;
-    color: #2c3e50;
-    // font-size: ;
-    // 字体抗锯齿渲染
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    // 浏览器在绘制文本时将着重考虑易读性，而不是渲染速度和几何精度.
-    text-rendering: optimizeLegibility;
+@import './variables';
+
+html {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  color: $mainColor;
+  // font-size: ;
+  // 字体抗锯齿渲染
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  // 浏览器在绘制文本时将着重考虑易读性，而不是渲染速度和几何精度.
+  text-rendering: optimizeLegibility;
+  overflow-y: hidden;
 }
 
 #app {
-    height: 100%;
-    text-align: center;
+  height: inherit;
+  // text-align: center;
 }
 
 *,
