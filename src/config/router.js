@@ -1,5 +1,5 @@
 import Layout from '@/layout';
-
+import demoRouters from './demoRouter.js';
 const constantRoutes = [{
   path: '/',
   component: Layout,
@@ -68,5 +68,5 @@ const constantRoutes = [{
   redirect: '/404'
 }
 ];
-
-export default constantRoutes;
+const routes = constantRoutes.concat(demoRouters);
+export default routes;
